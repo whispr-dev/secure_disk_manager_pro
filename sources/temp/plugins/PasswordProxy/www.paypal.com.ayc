@@ -1,0 +1,54 @@
+#
+# Paypal 1.0
+#
+##REQMAP||http://www.paypal.com||https://www.paypal.com
+#LOCMAP||https://www.paypal.com||http://www.paypal.com
+LOCMAP||https://www.paypal.com/home||http://www.paypal.com/home
+##REDMAP||redirectCmd=_login-submit||https://www.paypal.com/home
+#
+# Neutral Login run
+#
+HTMLMAP||https://www.paypal.com/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginNeutral
+LOCMAP||https://www.paypal.com/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginNeutral
+REQMAP||http://www.paypal.com/WebScrLoginNeutral||https://www.paypal.com/cgi-bin/webscr?cmd=_login-run
+REQMAP||https://www.paypal.com/WebScrLoginNeutral||https://www.paypal.com/cgi-bin/webscr?cmd=_login-run
+#
+HTMLMAP||https://www.paypal.com/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHomeNeutral
+LOCMAP||https://www.paypal.com/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHOmeNeutral
+REQMAP||http://www.paypal.com/WebScrHomeNeutral||https://www.paypal.com/cgi-bin/webscr?cmd=_home
+REQMAP||https://www.paypal.com/WebScrHomeNeutral||https://www.paypal.com/cgi-bin/webscr?cmd=_home
+#
+# NL WebScr
+#
+HTMLMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginNL
+LOCMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginNL
+REQMAP||http://www.paypal.com/WebScrLoginNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run
+REQMAP||https://www.paypal.com/WebScrLoginNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run
+#
+HTMLMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHomeNL
+LOCMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHomeNL
+REQMAP||http://www.paypal.com/WebScrHomeNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_home
+REQMAP||https://www.paypal.com/WebScrHomeNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_home
+#
+HTMLMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-submit||http://www.paypal.com/WebScrSubmitNL
+LOCMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-submit||http://www.paypal.com/WebScrSubmitNL
+REQMAP||http://www.paypal.com/WebScrSubmitNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-submit
+REQMAP||https://www.paypal.com/WebScrSubmitNL||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-submit
+#
+# US Login run
+#
+HTMLMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginUS
+LOCMAP||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run||http://www.paypal.com/WebScrLoginUS
+REQMAP||http://www.paypal.com/WebScrLoginUS||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run
+REQMAP||https://www.paypal.com/WebScrLoginUS||https://www.paypal.com/nl/cgi-bin/webscr?cmd=_login-run
+#
+HTMLMAP||https://www.paypal.com/us/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHomeUS
+LOCMAP||https://www.paypal.com/us/cgi-bin/webscr?cmd=_home||http://www.paypal.com/WebScrHomeUS
+REQMAP||http://www.paypal.com/WebScrHomeUS||https://www.paypal.com/us/cgi-bin/webscr?cmd=_home
+REQMAP||https://www.paypal.com/WebScrHomeUS||https://www.paypal.com/us/cgi-bin/webscr?cmd=_home
+#
+# Login submit
+#
+##HTMLMAP||https://www.paypal.com/cgi-bin/webscr?cmd=_login-submit||http://www.paypal.com/LoginSubmitPage
+##REQMAP||http://www.paypal.com/LoginSubmitPage||https://www.paypal.com/cgi-bin/webscr?cmd=_login-submit
+REQMAP||http://www.paypal.com||https://www.paypal.com

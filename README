@@ -1,0 +1,153 @@
+# SecureDiskManagerPro
+
+**SecureDiskManagerPro** is an all-in-one, high-performance, stealth-capable file management and encryption platform designed for modern privacy, secure automation, and covert data transport. It's optimized for low-resource machines, but scales beautifully with SIMD, multithreading, and high-speed I/O.
+
+---
+
+## 🔐 Features
+
+- Full AES-256 file encryption/decryption (with optional keyfiles)
+- Secure file shredding with optional SIMD acceleration
+- Multi-threaded, block-level compression engine (ZSTD-compatible)
+- Recursive file searching with quantum-resonant matching logic
+- Encrypted uploads/downloads with retry and resume support
+- MAC address spoofing and GPG persona rotation
+- GhostMode identity and tunnel management
+- Kill switch and system daemon manager
+- Covert heartbeat signals and DNS cloaking
+
+---
+
+## 🗂 Project Structure
+
+This project is modular, organized for maintainability, and extensible.
+
+```text
+SecureDiskManagerPro/
+├── core/                  # Core logic for disk, search, encryption, compression
+│   ├── DiskManagement.cpp/h
+│   ├── FileEncryption.cpp/h
+│   ├── SecureDeletion.cpp/h
+│   ├── SecureDeletion_SIMD.cpp/h
+│   ├── FileTransferManager.cpp/h
+│   ├── FileUploader.cpp/h
+│   ├── FileCompressor.cpp/h
+│   ├── FileCompressor_MT_SIMD.cpp/h
+│   ├── FileCompressor_MT_SIMD_Enc.cpp/h
+│   ├── SearchEngine.cpp/h
+│   ├── UltraFastSearch.cpp/h
+│   ├── GhostMode_Controller.cpp/h
+│   ├── GhostMode_Controller-2.cpp/h
+├── cli/                   # CLI entrypoints and interactive command logic
+│   ├── Main.cpp
+│   ├── MainController.cpp/h
+│   ├── CommandContext.h
+│   ├── CommandDispatcher.cpp/h
+│   ├── GhostMode_CLI.cpp
+│   ├── Ghost_CLI_Main.cpp
+│   ├── Ghost_UI_CLI.cpp/h
+├── utils/                 # Reusable helper systems
+│   ├── GeneralFunctions.cpp/h
+│   ├── RNG.cpp/h          # Standard RNG
+│   ├── RNG_SIMD.cpp/h     # SIMD-enhanced RNG
+│   ├── Resource.h
+│   ├── Status.cpp/h
+│   ├── MacSpoofer.cpp/h
+│   ├── GPGWrapper.cpp/h
+│   ├── ProfileRotator.cpp/h
+│   ├── KeyManager.cpp/h
+│   ├── SelfCleanup.cpp/h
+│   ├── ServiceManager.cpp/h
+│   ├── SystemMonitor.cpp/h
+│   ├── Ghost_Daemon.cpp/h
+│   ├── Ghost_KillSwitc.cpp/h
+│   ├── Ghost_Watchdog.cpp/h
+│   ├── GhostStealthNet.cpp/h
+│   ├── Ghost_Tunnel.cpp/h
+│   ├── UIHELPER.cpp/h
+│   ├── AutoSelfDestruct.cpp/h
+│   ├── FileLockGuard.cpp/h
+├── identity/              # Identity/persona systems
+│   ├── Ghost_IdenityManager.h
+│   ├── Ghost_IdentitySwitcher.cpp
+│   ├── IdentitySwitcher.cpp/h
+│   ├── Persona_Switcher.cpp/h
+├── GhostMode_Vanisher/    # (Legacy/inspired modules now folded in)
+│   ├── plugins/           # Quantum/coherence search support
+│   │   ├── tokenizer.rs, quantum_types.rs, entropy.rs, engine.rs, crawler.rs
+│   │   ├── QuantumEngine.cpp/h, QubitTypes.cpp/h
+│   │   ├── SIMD_Entropy.cpp/h, PrimeHilbertIndexer.cpp/h
+│   ├── net/               # Tunnel/DNS logic
+│   │   ├── GhostStealthNet.cpp/h, Ghost_Tunnel.cpp/h
+│   ├── include/           # FS monitor / wipe hooks
+│   │   ├── GhostMode_FS_Monitor.h, Ghost_AutoWipe.h, Ghost_NetUtils.h
+│   ├── src/               # Impl of monitor/wipe/net modules
+│       ├── GhostMode_FS_Monitor.cpp, Ghost_AutoWipe.cpp, Ghost_NetUtils.cpp
+├── resources/
+│   └── settings.conf      # Default global configuration
+├── docs/                  # Planning and design notes
+│   ├── ver1_g-petey_plan.md, ver2_g-petey_plan.md, final_plan.md, etc.
+├── old_code/              # Historical experiments / backups
+│   └── main.cpp, RNG.h, Main.new
+├── CMakeLists.txt         # Build script
+└── LICENSE
+```
+
+---
+
+## ⚙ Build Instructions
+
+**Linux/macOS:**
+```bash
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+```
+
+**Windows (PowerShell):**
+```powershell
+cmake -S . -B build
+cmake --build build --config Release
+```
+
+Dependencies:
+- OpenSSL
+- libcurl
+- libzstd
+- C++17+ compiler (GCC, Clang, MSVC)
+
+---
+
+## 🧪 Usage Examples
+
+```bash
+./SecureDiskManagerPro --encrypt myfile.txt --keyfile key.bin
+./SecureDiskManagerPro --search "password AND last_modified:week"
+./SecureDiskManagerPro --switch-identity opsec_alpha
+./SecureDiskManagerPro --tunnel start 127.0.0.1:9050
+```
+
+---
+
+## 👻 GhostMode Use Cases
+
+- Enable stealth networking and persona spoofing
+- Cloak DNS and route traffic via hidden tunnels
+- Autowipe identities and keys on kill-switch trigger
+- Remote beacon or heartbeat via proxy
+- Operate covertly with no GUI footprint
+
+---
+
+## 🧭 Project Vision
+
+SecureDiskManagerPro aspires to become:
+- A fully self-contained stealth file operating platform
+- A live-USB OS kernel with adaptive compression & security
+- A modular base for ghost mode automation and covert browsing
+
+---
+
+*No logs. No leaks. No traces.*  
+_This is data liberation._
+

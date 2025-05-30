@@ -1,0 +1,6 @@
+#
+# Facebook 1.0
+#
+#HTMLMAP||https://www.facebook.com/login.php?||http://www.facebook.com/LoginScreen
+#REQMAP||http://www.facebook.com/LoginScreen||https://www.facebook.com/login.php?
+

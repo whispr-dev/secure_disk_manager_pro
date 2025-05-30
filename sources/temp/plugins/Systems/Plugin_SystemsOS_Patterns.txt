@@ -1,0 +1,68 @@
+windows\s+nt\s+6\.1||Windows 7
+
+windows\s+nt\s+6\.0||Windows Vista
+
+windows\s+nt\s+5\.2||Windows Server 2003
+
+windows\s+nt\s+5\.1||Windows XP
+windows\s+nt\s+5\.01||Windows 2000 sp1
+
+windows\s+nt\s+5\.0||Windows 2000
+
+windows\s+nt\s+4\.0||Windows NT 4.0
+
+win\s+9x\s+4\.9||Windows Me
+
+windows\s+98||Windows 98
+
+windows\s+95||Windows 95
+
+windows\s+ce||Windows CE
+
+windows||Windows (version unknown)
+
+openbsd||OpenBSD
+
+sunos||SunOS
+
+ubuntu||Ubuntu
+
+linux||Linux
+
+iPad\s*\;||iPad
+
+iPod\s*;||iPod
+
+iPhone||iPhone
+
+Android||Android
+
+Playstation\s+3||Playstation 3
+
+PSP||Playstation portable
+
+mac\s+os\s+x\s+beta||Mac OSX Beta (Kodiak)
+
+mac\s+os\s+x\s+10\.0||Mac OSX Cheetah
+
+mac\s+os\s+x\s+10\.1||Mac OSX Puma
+
+mac\s+os\s+x\s+10\.2||Mac OSX Jaguar
+
+mac\s+os\s+x\s+10\.3||Mac OSX Panther
+
+mac\s+os\s+x\s+10\.4||Mac OSX Tiger
+
+mac\s+os\s+x\s+10\.5||Mac OSX Leopard
+
+mac\s+os\s+x\s+10\.6||Mac OSX Snow Leopard
+
+mac\s+os\s+x\s+10\.7||Mac OSX Lion
+
+mac\s+os\s+x||Mac OSX (version unknown)
+
+QNX||QNX
+
+beos||BeOS
+
+os\/2||OS2

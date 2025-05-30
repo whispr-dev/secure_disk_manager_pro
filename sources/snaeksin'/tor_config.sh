@@ -1,0 +1,1 @@
+torsocks wget --recursive --no-parent --page-requisites --html-extension --convert-links https://target.com/

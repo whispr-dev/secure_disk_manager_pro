@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<ArrayOfSystemPattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SystemPattern>
+    <SystemPatternString>windows.*6\.2</SystemPatternString>
+    <SystemName>Windows 8</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows\s+nt\s+6\.1</SystemPatternString>
+    <SystemName>Windows 7</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*6\.1</SystemPatternString>
+    <SystemName>Windows 7</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*6\.0</SystemPatternString>
+    <SystemName>Windows Vista</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*5\.2</SystemPatternString>
+    <SystemName>Windows Server 2003</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*5\.1</SystemPatternString>
+    <SystemName>Windows XP</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*5\.01</SystemPatternString>
+    <SystemName>Windows 2000 sp1</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*5\.0</SystemPatternString>
+    <SystemName>Windows 2000</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows.*4\.0</SystemPatternString>
+    <SystemName>Windows NT 4.0</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>win\s+9x\s+4\.9</SystemPatternString>
+    <SystemName>Windows Me</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows\s+98</SystemPatternString>
+    <SystemName>Windows 98</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows\s+95</SystemPatternString>
+    <SystemName>Windows 95</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows\s+ce</SystemPatternString>
+    <SystemName>Windows CE</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows</SystemPatternString>
+    <SystemName>Windows (version unknown)</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>Linux.+Android\s+4\.1</SystemPatternString>
+    <SystemName>Android 4.1</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+beta</SystemPatternString>
+    <SystemName>Mac OSX Beta (Kodiak)</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10\.0</SystemPatternString>
+    <SystemName>Mac OSX Cheetah</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]1</SystemPatternString>
+    <SystemName>Mac OSX Puma</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]2</SystemPatternString>
+    <SystemName>Mac OSX Jaguar</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]3</SystemPatternString>
+    <SystemName>Mac OSX Panther</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]4</SystemPatternString>
+    <SystemName>Mac OSX Tiger</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]5</SystemPatternString>
+    <SystemName>Mac OSX Leopard</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]6</SystemPatternString>
+    <SystemName>Mac OSX Snow Leopard</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x\s+10[\._]7</SystemPatternString>
+    <SystemName>Mac OSX Lion</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>ipod.+?iphone.+?4[_\.]2[_\.]1</SystemPatternString>
+    <SystemName>iPod.*iOS\s+4[_\.]2[_\.]1</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>iphone.+?iphone.+?6[_\.]1[_\.]3</SystemPatternString>
+    <SystemName>iPod.*iOS\s+4.2.1</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>windows\s+nt\s+6\.3</SystemPatternString>
+    <SystemName>Windows 9</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>openbsd</SystemPatternString>
+    <SystemName>OPenBSD</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>sunos</SystemPatternString>
+    <SystemName>SunOS</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>ubuntu</SystemPatternString>
+    <SystemName>Ubuntu</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>Linux</SystemPatternString>
+    <SystemName>linux</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>QNX</SystemPatternString>
+    <SystemName>QNX</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>beos</SystemPatternString>
+    <SystemName>BeOS</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>os\/2</SystemPatternString>
+    <SystemName>os/2</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>iPod</SystemPatternString>
+    <SystemName>iPod</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>iPad</SystemPatternString>
+    <SystemName>iPad</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>mac\s+os\s+x</SystemPatternString>
+    <SystemName>Mac OSX (version unknown)</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>iPhone</SystemPatternString>
+    <SystemName>iPhone</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>iPhone</SystemPatternString>
+    <SystemName>iPhone</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>Android</SystemPatternString>
+    <SystemName>Android</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>Playstation\s+3</SystemPatternString>
+    <SystemName>Playstation 3</SystemName>
+  </SystemPattern>
+  <SystemPattern>
+    <SystemPatternString>PSP</SystemPatternString>
+    <SystemName>Playstation portable</SystemName>
+  </SystemPattern>
+</ArrayOfSystemPattern>

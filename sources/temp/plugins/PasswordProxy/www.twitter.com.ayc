@@ -1,0 +1,17 @@
+#
+# Twitter 1.0
+#
+HTMLMAP||https://twitter.com/sessions?phx=1||http://twitter.com/SessionsPHX1
+REQMAP||http://twitter.com/SessionsPHX1||https://twitter.com/sessions?phx=1
+#
+#
+HTMLMAP||https://twitter.com/sessions||http://twitter.com/sessions
+REQMAP||http://twitter.com/sessions||https://twitter.com/sessions
+#
+#
+HTMLMAP||https://twitter.com/||http://twitter.com/
+HTMLMAP||https://www.twitter.com/||http://www.twitter.com/
+#
+#  
+REQMAP||http://twitter.com||https://twitter.com/login
+REQMAP||http://www.twitter.com||https://twitter.com/login

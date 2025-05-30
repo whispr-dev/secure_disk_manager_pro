@@ -1,0 +1,7 @@
+
+Description : 	IEPasswordRecovery searches inside Microsofts protected storage area for Internet Explorer auto completion (authentication input fields in a page) and HTTP authentication entries. If such an entry was found the hostname, username and password are printed on the display.
+Only Internet Explorer up to version 6 use the protected storage to keep sensitive data. From Internet Explorer 7 on the account data is kept at an other place in the registry and in the file system. Unfortunately I had not yet the time to implement account data extraction for IE 7. This little shortcoming will be fixed in a later release.
+ 
+Tested on : 	Windows XP, IE 6
+ 
+Feedback : 	In case you encounter any problems with the tool, you have suggestions to improve it, or you tested it with a Windows version i’ve not yet tested please drop me an email.

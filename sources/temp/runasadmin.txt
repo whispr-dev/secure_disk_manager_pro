@@ -1,0 +1,20 @@
+
+« C – Encode Databuffer To Base64
+ARP Poisoning source code »
+RunAsAdmin – Running program with administrator privileges
+
+Jan 6th, 2013 by carrumba
+	
+Tool name : 	RunAsAdmin
+ 
+Description : 	RunAsAdmin is a tool to run a particular portion of the code under the elevated administrator privileges. If the user is an Administrator and has elevated privileges it will directly jump to the block where the elevated admin privileges are required.
+
+If the user is an administrator but the privileges are not elevated yet RunAsAdmin will elevate them automatically and jump to the block where the elevated admin privileges are required.
+
+If the user has no administrator privileges it calls the “RunAs” command and asks the user to run the program under elevated privileges. Depending on the UAC settings the user either has to type in a password, he has to confirm the process or there is no confirmation screen.
+ 
+Tested on : 	Windows 7
+ 
+Feedback : 	In case you encounter any problems with the tool, you have suggestions to improve it, or you tested it with a Windows version i’ve not yet tested please drop me an email.
+ 
+Downloads : 	Version 0.1 – Binary&Source

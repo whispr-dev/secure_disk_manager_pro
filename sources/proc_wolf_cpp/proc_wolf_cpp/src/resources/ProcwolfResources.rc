@@ -1,0 +1,14 @@
+resource_rc = r'''#define IDI_APP_ICON 101
+
+IDI_APP_ICON ICON "resources\\wolf.ico"
+'''
+
+resource_header = r'''#pragma once
+#define IDI_APP_ICON 101
+'''
+
+with open("/mnt/data/ProcWolfCPP/resources/ProcWolfResources.rc", "w") as f:
+    f.write(resource_rc)
+
+with open("/mnt/data/ProcWolfCPP/resources/ProcWolfResources.h", "w") as f:
+    f.write(resource_header)

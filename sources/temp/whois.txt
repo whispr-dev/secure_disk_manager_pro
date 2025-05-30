@@ -1,0 +1,14 @@
+
+« Hackers pluck 8,300 customer logins from bank server
+Google runs Microsoft’s IE, attacks show »
+WhoIs
+
+Jan 13th, 2010 by carrumba
+	
+Tool name : 	WhoIs 0.1
+ 
+Description : 	A tool to request an IP’s Whois registration information from a Whois server. In this tool the ripe.net server is the chosen one. Change to whatever you want.
+ 
+Tested on : 	Windows XP
+ 
+Feedback : 	In case you encounter any problems with the tool, you have suggestions to improve it, or you tested it with a Windows version i’ve not yet tested please drop me an email.

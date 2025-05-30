@@ -1,0 +1,6 @@
+#
+# Wordpress 1.0
+#
+HTMLMAP||https://en.wordpress.com/wp-login.php||http://en.wordpress.com/WPLoginScreen
+REQMAP||http://en.wordpress.com/WPLoginScreen||https://en.wordpress.com/wp-login.php
+#

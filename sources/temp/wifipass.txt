@@ -1,0 +1,19 @@
+
+« TCPGun – Shooting TCP connections
+After 3.5 years with Megapanzer … »
+WiFiDump – Recovering WiFi Passwords On Windows
+
+Sep 26th, 2012 by carrumba
+	
+Tool name : 	WiFiDump
+ 
+Description : 	WiFiDump is a tool to recover all locally stored WiFi account information. It loops through a WiFi profile catalogue and extracts all the relevant profile information. The WiFi passwords are encrypted and not saved in plaintext. However the passwords are protected by a protection service Windos is offering. You don’t have to crack them in a tedious process but can decrypt the passwords instead in case if you have Administrator privileges.
+
+ 
+Tested on : 	Windows 7
+ 
+Feedback : 	In case you encounter any problems with the tool, you have suggestions to improve it, or you tested it with a Windows version I’ve not yet tested please drop me an email.
+ 
+Downloads : 	Version 0.1 – Binary
+  	Version 0.2 – Binary
+ 

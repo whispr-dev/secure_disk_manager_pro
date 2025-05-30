@@ -1,0 +1,6 @@
+#
+# LinkedIn 1.0
+#
+HTMLMAP||https://www.linkedin.com/uas/login-submit||http://www.linkedin.com/uas/LoginSubmit
+REQMAP||http://www.linkedin.com/uas/LoginSubmit||https://www.linkedin.com/uas/login-submit
+

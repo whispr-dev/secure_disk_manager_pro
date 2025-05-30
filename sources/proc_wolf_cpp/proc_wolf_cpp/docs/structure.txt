@@ -1,0 +1,10 @@
+ProcWolfCPP/
+├── core/         # Backend logic: process scanning, threat analysis, history
+├── cli/          # Command-line interface
+├── service/      # Windows Service version
+├── stealth/      # Background systray app (GUI)
+├── resources/    # Icons, assets, GUI bits
+├── include/      # Headers
+├── logs/         # Logging output
+├── whitelist/    # Trusted processes and paths
+├── quarantine/   # Quarantined files

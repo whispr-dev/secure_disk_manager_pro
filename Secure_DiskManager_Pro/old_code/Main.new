@@ -1,0 +1,187 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <filesystem>
+
+#include "DiskManagement.h"
+#include "SearchEngine.h"
+#include "PrimeHilbertIndexer.h"
+#include "QuantumEngine.h"
+#include "RNG.h"
+#include "FileEncryption.h"
+#include "FileCompressor.h"
+#include "FileCompressor_MT_SIMD.h"
+#include "FileCompressor_MT_SIMD_Enc.h"
+#include "FileUploader.h"
+#include "FileTransferManager.h"
+#include "Shredder.h"
+#include "SelfCleanup.h"
+
+void printUsage() {
+    std::cout << R"(SecureDiskManagerPro v1.0
+
+Usage:
+  --encrypt <file> <key>
+  --decrypt <file> <key>
+  --keygen <output.key>
+  --shred <file>
+  --selfdelete
+  --search <path> <keyword>
+  --hilbert <file>
+  --qsearch <file1> <file2>
+)";
+}
+
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        printUsage();
+        return 1;
+    }
+
+    std::string cmd = argv[1];
+
+    if (cmd == "--encrypt" && argc == 4) {
+        if (FileEncryption::encryptFile(argv[2], argv[3]))
+            std::cout << "File encrypted successfully.\n";
+        else
+            std::cerr << "Encryption failed.\n";
+    }
+
+    else if (cmd == "--decrypt" && argc == 4) {
+        if (FileEncryption::decryptFile(argv[2], argv[3]))
+            std::cout << "File decrypted successfully.\n";
+        else
+            std::cerr << "Decryption failed.\n";
+    }
+
+    else if (cmd == "--keygen" && argc == 3) {
+        if (RNG::generateKeyfile(argv[2], 4096))
+            std::cout << "Keyfile generated.\n";
+        else
+            std::cerr << "Failed to generate keyfile.\n";
+    }
+
+    else if (cmd == "--shred" && argc == 3) {
+        if (Shredder::secureDelete(argv[2]))
+            std::cout << "File securely shredded: " << argv[2] << "\n";
+        else
+            std::cerr << "Shred failed.\n";
+    }
+
+    else if (cmd == "--selfdelete") {
+        std::cout << "Self-destruct initiated...\n";
+        SelfCleanup::confirmAndDeleteSelf(argv[0]);
+    }
+
+    else if (cmd == "--search" && argc == 4) {
+        auto results = SearchEngine::search(argv[2], argv[3]);
+        for (const auto& r : results)
+            std::cout << r << "\n";
+    }
+
+    else if (cmd == "--hilbert" && argc == 3) {
+        HilbertCoord hc = PrimeHilbertIndexer::hashFileToHilbert(argv[2]);
+        std::cout << "Hilbert Coord: (" << hc.x << ", " << hc.y << ", " << hc.z << ")\n";
+    }
+
+    else if (cmd == "--qsearch" && argc == 4) {
+        Qubit q1 = QuantumEngine::encodeTextAsQubit(argv[2]);
+        Qubit q2 = QuantumEngine::encodeTextAsQubit(argv[3]);
+        double sim = QuantumEngine::similarity(q1, q2);
+        std::cout << "Quantum Similarity: " << sim << "\n";
+    }
+
+    else if (cmd == "--compress" && argc == 4) {
+        if (FileCompressor::compress(argv[2], argv[3]))
+            std::cout << "File compressed successfully.\n";
+        else
+            std::cerr << "Compression failed.\n";
+    }
+
+    else if (cmd == "--decompress" && argc == 4) {
+        if (FileCompressor::decompress(argv[2], argv[3]))
+            std::cout << "File decompressed successfully.\n";
+        else
+            std::cerr << "Decompression failed.\n";
+    }
+
+    else if (cmd == "--fastcompress" && argc == 4) {
+        if (FileCompressorMT::compress(argv[2], argv[3]))
+            std::cout << "Multithreaded compression complete.\n";
+        else
+            std::cerr << "Compression failed.\n";
+    }
+
+    else if (cmd == "--fastdecompress" && argc == 4) {
+        if (FileCompressorMT::decompress(argv[2], argv[3]))
+            std::cout << "Decompression successful.\n";
+        else
+            std::cerr << "Decompression failed.\n";
+    }
+
+    else if (cmd == "--fastcompress" && argc >= 4) {
+        std::string key = "", mode = "speed";
+        for (int i = 4; i < argc; ++i) {
+            if (std::string(argv[i]) == "--encrypt" && i + 1 < argc)
+                key = argv[++i];
+            else if (std::string(argv[i]) == "--mode" && i + 1 < argc)
+                mode = argv[++i];
+        }
+
+        if (FileCompressorMTEnc::compress(argv[2], argv[3], key, mode))
+            std::cout << "Encrypted compression done!\n";
+        else
+            std::cerr << "Compression failed.\n";
+    }
+
+    else if (cmd == "--fastdecompress" && argc >= 4) {
+        std::string key = "";
+        for (int i = 4; i < argc; ++i)
+            if (std::string(argv[i]) == "--encrypt" && i + 1 < argc)
+                key = argv[++i];
+
+        if (FileCompressorMTEnc::decompress(argv[2], argv[3], key))
+            std::cout << "Decompression complete!\n";
+        else
+            std::cerr << "Decompression failed.\n";
+    }
+
+    else if (cmd == "--upload" && argc >= 4) {
+        std::string key = "";
+        int retries = 3;
+        for (int i = 4; i < argc; ++i) {
+            if (std::string(argv[i]) == "--encrypt" && i + 1 < argc)
+                key = argv[++i];
+            if (std::string(argv[i]) == "--retries" && i + 1 < argc)
+                retries = std::stoi(argv[++i]);
+        }
+
+        if (FileTransferManager::upload(argv[2], argv[3], key, retries))
+            std::cout << "Upload complete.\n";
+        else
+            std::cerr << "Upload failed after retries.\n";
+    }
+
+    else if (cmd == "--download" && argc >= 4) {
+        std::string key = "";
+        int retries = 3;
+        for (int i = 4; i < argc; ++i) {
+            if (std::string(argv[i]) == "--encrypt" && i + 1 < argc)
+                key = argv[++i];
+            if (std::string(argv[i]) == "--retries" && i + 1 < argc)
+                retries = std::stoi(argv[++i]);
+        }
+
+        if (FileTransferManager::download(argv[2], argv[3], key, retries))
+            std::cout << "Download complete.\n";
+        else
+            std::cerr << "Download failed after retries.\n";
+    }
+
+    else {
+        printUsage();
+        return 1;
+    }
+
+    return 0;
+}

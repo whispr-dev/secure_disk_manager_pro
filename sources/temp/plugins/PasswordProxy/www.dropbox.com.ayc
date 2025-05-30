@@ -1,0 +1,11 @@
+#
+# Dropbox 1.0
+#
+##HTMLMAP||https://www.dropbox.com/login||http://www.dropbox.com/LoginScreen
+##REQMAP||http://www.dropbox.com/LoginScreen||https://www.dropbox.com/login
+##REQMAP||http://www.dropbox.com/||https://www.dropbox.com/
+#
+##REQMAP||http://www.dropbox.com/Encrypted||https://www.dropbox.com/
+##REQMAP||http://www.dropbox.com/||https://www.dropbox.com/
+#
+##LOCMAP||/home||https://www.dropbox.com/home
