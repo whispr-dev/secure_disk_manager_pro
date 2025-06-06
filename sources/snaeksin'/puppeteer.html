@@ -1,9 +1,0 @@
-const puppeteer = require('puppeteer');
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://ghostswap.io/');
-  await page.screenshot({ path: 'ghostswap.png' });
-  await page.pdf({ path: 'ghostswap.pdf' });
-  await browser.close();
-})();
